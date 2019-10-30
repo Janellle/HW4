@@ -1,6 +1,7 @@
 const express = require("express");
 var faker = require('faker');
 const app = express();
+
 app.engine("html", require("ejs").renderFile);
 app.use(express.static("public")); // to access images css/js/images/or any external file
 
