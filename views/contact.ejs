@@ -1,0 +1,20 @@
+<!--All ejs tags go within the tags <%%> below -->
+<% include partials/header.ejs %>
+
+<body>
+    <div class="content clearfix">
+        <h3>If you would like to contact anyone about the information you can do so here: </br></h3>
+        </br>
+        
+        <h4>Company: <%= " " + faker.company.companyName() %></br></h4>
+        <h4>Address: <%= " " + faker.address.streetAddress() + " " + faker.address.city() +
+            " " + faker.address.zipCode() + " " + faker.address.state() + 
+            ", " + faker.address.country() %></h4>
+        <h4>Email: <%= " " + faker.internet.email() %></h4>
+        <h4>Phone: <%= " " + faker.phone.phoneNumber() %></h4>
+
+    </div>
+    
+    <% include partials/footer.ejs %>
+</body>
+</html>
